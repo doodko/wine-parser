@@ -9,6 +9,9 @@ I have used [SQLite](www.sqlite.org) with such structure:
 
 ![](ER.png "DB structure")
 
-fozzy.py is scraping info and adds it to DB.
-db.py contains several queries that I use most often.
-main.py prints it in human readable form.
+fozzy.py is scraping info and adds it to DB.  
+db.py contains several queries that I use most often.  
+main.py prints it in human readable form.  
+
+output example of top-5 positions in 3 different queries:
+![](output_example.png "output example")

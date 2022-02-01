@@ -25,7 +25,7 @@ def best_choise(discont:int=100, price:int=1000):
     return wine_choise
 
 
-def best_choise_relative(discont:int=100, price:int=1000):
+def best_choise_relative(discont:int=100, price:int=2000):
     cursor.execute("SELECT name, price_now, regular_price, url FROM wines WHERE discont > ? AND price_now < ?", (discont, price))
     data = [count_discount(row) for row in cursor.fetchall()]
     return sorted(data, key=lambda row: row[2], reverse=True)

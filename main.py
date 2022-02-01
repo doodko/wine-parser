@@ -6,7 +6,7 @@ import db
 # fozzy.get_data()
 
 
-def print_wines(lst, count=3):
+def print_wines(lst, count=5):
     if len(lst) > count:
         lst = lst[:count]
     for row in lst:
